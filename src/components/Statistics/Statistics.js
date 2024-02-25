@@ -1,4 +1,5 @@
 import css from './Statistics.module.css';
+import randomColor from 'helpers/randomColor';
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -23,7 +24,3 @@ export const Statistics = ({ title, stats }) => {
     </section>
   );
 };
-
-function randomColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
